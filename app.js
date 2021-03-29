@@ -8,10 +8,15 @@ const indexRouter = require('./routes/index');
 
 const app = express();
 
+
+const options = {
+  beautify: true,
+  doctype: "<!DOCTYPE html>",
+};
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));  // app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');                    // app.set('view engine', 'jade');
-app.engine('jsx', require('express-react-views').createEngine());
+app.engine('jsx', require('express-react-views').createEngine(options));
 
 app.use(logger('dev'));
 app.use(express.json());
