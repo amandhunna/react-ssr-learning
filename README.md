@@ -13,3 +13,10 @@ from: https://expressjs.com/en/starter/static-files.html
 https://expressjs.com/en/starter/examples.html
 
 this is now complete boiler plate, extent from here
+
+# step 4 (1st of this (ssr-main) branch)
+
+- from: https://github.com/reactjs/express-react-views
+  install: npm install express-react-views react react-dom
+
+:: GO TO the diff
